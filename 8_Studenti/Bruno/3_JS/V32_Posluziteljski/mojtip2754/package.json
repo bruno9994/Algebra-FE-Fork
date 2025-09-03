@@ -1,0 +1,12 @@
+{
+  "name": "mojtip2754",
+  "version": "1.0.0",
+  "description": "Demo npm modul",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Otvori index.html u pregledniku\""
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
