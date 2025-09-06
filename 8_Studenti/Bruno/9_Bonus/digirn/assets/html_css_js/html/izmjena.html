@@ -18,27 +18,8 @@
         <img src="../../digirn.png" alt="digirn logo" width="150" />
         <h2>DIGIRN</h2>
       </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Glavna</a></li>
-          <li><a href="lista.html">Nalozi</a></li>
-        </ul>
-        <div id="hamburger-icon">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </nav>
     </header>
     <main>
-      <aside>
-        <nav>
-          <ul>
-            <li><a href="../index.html">Glavna</a></li>
-            <li><a href="lista.html">Nalozi</a></li>
-          </ul>
-        </nav>
-      </aside>
       <section>
         <h1>Izmjena naloga</h1>
         <form action="">
@@ -51,7 +32,6 @@
               name="broj_naloga"
               maxlength="10"
               size="10"
-              value="5mziv4o1444"
               required
             />
             <label for="narudzbenica">Narudzbenica:</label>
@@ -61,17 +41,10 @@
               name="narudzbenica"
               maxlength="10"
               size="10"
-              value="1444abcliv"
               required
             />
             <label for="datum_naloga">Datum otvaranja:</label>
-            <input
-              type="date"
-              name="datum_naloga"
-              id="datum_naloga"
-              value="2024-10-14"
-              required
-            />
+            <input type="date" name="datum_naloga" id="datum_naloga" required />
           </div>
           <hr />
           <div class="container">
@@ -82,7 +55,6 @@
               id="narucitelj"
               maxlength="15"
               size="15"
-              value="Moj stan"
             />
             <label for="izvrsitelj">Izvrsitelj:</label>
             <input
@@ -91,7 +63,6 @@
               id="izvrsitelj"
               maxlength="15"
               size="15"
-              value="Elektro servis"
               required
             />
             <label for="mjesto_troska">Mjesto troska:</label>
@@ -101,7 +72,6 @@
               id="mjesto_troska"
               maxlength="15"
               size="15"
-              value="Odjel nabave"
             />
             <label for="nositelj_troska">Noistelj troska:</label>
             <input
@@ -110,7 +80,6 @@
               id="nositelj_troska"
               maxlength="15"
               size="15"
-              value="Odjel prodaje"
             />
           </div>
           <hr />
@@ -120,7 +89,6 @@
               type="date"
               name="datum_pocetka"
               id="datum_pocetka"
-              value="2024-10-15"
               required
             />
             <label for="vrijeme_pocetka">Vrijeme pocetka:</label>
@@ -128,7 +96,6 @@
               type="time"
               name="vrijeme_pocetka"
               id="vrijeme_pocetka"
-              value="09:00"
               required
             />
             <label for="datum_zavrsetka">Datum zavrsetka:</label>
@@ -136,7 +103,6 @@
               type="date"
               name="datum_zavrsetka"
               id="datum_zavrsetka"
-              value="2024-10-16"
               required
             />
             <label for="vrijeme_zavrsetka">Vrijeme zavrsetka:</label>
@@ -144,7 +110,6 @@
               type="time"
               name="vrijeme_zavrsetka"
               id="vrijeme_zavrsetka"
-              value="17:00"
               required
             />
           </div>
@@ -157,7 +122,6 @@
               id="naslov"
               maxlength="20"
               size="20"
-              value="Ciscenje filtera"
               required
             />
           </div>
@@ -171,17 +135,16 @@
               rows="5"
               maxlength="50"
               required
-            >
-Rastavljanje uredjaja, ciscenje, sastavljanje uredjaja</textarea
-            >
+            ></textarea>
           </div>
           <hr />
           <div class="button-container">
-            <button type="submit">U redu</button>
-            <button type="reset">Ponisti</button>
+            <button id="ok" type="submit">U redu</button>
+            <button id="cancel" type="reset">Ponisti</button>
           </div>
         </form>
       </section>
     </main>
+    <script type="module" src="../js/izmjena.js"></script>
   </body>
 </html>

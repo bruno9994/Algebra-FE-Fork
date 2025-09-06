@@ -16,6 +16,11 @@ table tbody tr:hover {
   background-color: var(--inversePrimary);
 }
 
+#nema-naloga {
+  display: none;
+  margin: 10px auto;
+}
+
 @media (max-width: 899px) {
   .table-col-hide {
     display: none;
