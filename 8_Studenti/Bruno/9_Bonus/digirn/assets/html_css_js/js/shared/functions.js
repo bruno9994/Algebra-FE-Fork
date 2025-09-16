@@ -1,5 +1,7 @@
 import { dummyNalozi } from "./data.js";
 
+const API_URL = "";
+
 export function toggleNav(hamburgerEl, asideEl) {
   let asideDisplay = window.getComputedStyle(asideEl).display;
 
@@ -13,16 +15,28 @@ export function toggleNav(hamburgerEl, asideEl) {
   hamburgerEl.classList.toggle("change");
 }
 
-export function ucitajFirebase() {
+export async function ucitajFirebase() {
   try {
+    const tmpNalozi = [];
+    const response = await fetch(API_URL);
+    const data = await response.json();
+
+    for (let key in data) {
+      tmpNalozi.push(data[key]);
+    }
+
     // Dohvat podataka
-    return dummyNalozi;
+    return tmpNalozi[0];
   } catch (error) {
     alert(error);
   }
 }
 
-export function zapisiFirebase() {
+export function zapisiFirebase(nalozi) {
+  // Obrisi trenutne naloge
+
+  // Zapisi naloge
+
   console.log("Nalozi zapisani!");
 }
 
